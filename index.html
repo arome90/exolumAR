@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planta de hidrógeno verde - Exolum</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="introES">
+      <bottom class="boton idioma" onClick="cambiarIdioma()">EN</bottom>
+      <h1>Planta de hidrógeno verde</h1>
+
+      <p>
+        El proceso de generación del hidrógeno verde consta de tres fases
+        principales: la producción, el almacenamiento y la distribución.
+      </p>
+      <p>
+        A continuación, podrá ver una representación esquemática en 3D de una
+        planta de Hidrógeno. En ella se muestran las distintas zonas en las que
+        tienen lugar cada una de las fases de generación, comenzando por la
+        producción del hidrógeno mediante los paneles HEVO, seguido del
+        almacenamiento en los depósitos a presión y terminando en la
+        distribución a través del surtidor.
+      </p>
+
+      <div>
+        <h3>Requisitos mínimos:</h3>
+
+        <ul>
+          <li>Android o IOS actualizados.</li>
+          <li>Navegador Google Chrome actualizado.</li>
+        </ul>
+      </div>
+
+      <h3>Instrucciones de uso:</h3>
+
+      <ul>
+        <li>
+          Al pulsar el botón "COMENZAR" en la parte inferior de esta página, se
+          mostrará el modelo 3D de la planta de Hidrógeno, por el cual podrá
+          navegar, pulsando sobre le modelo, rotando y haciendo zoom.
+        </li>
+
+        <li>
+          Si su dispositivo tiene soporte para realidad aumentada, se mostrará
+          un botón en el que podrá activarla.
+        </li>
+
+        <li>
+          Apunte con el móvil a una zona iluminada del suelo, pulse el botón de
+          "Activar RA" y mueva suavemente el móvil para que aparezca el modelo
+          3D en realidad aumentada.
+        </li>
+      </ul>
+
+      <div class="boton-contendor">
+        <a class="boton" href="./ModelViewer">COMENZAR</a>
+      </div>
+    </div>
+
+    <div id="introEN" class="oculto">
+      <bottom class="boton idioma" onClick="cambiarIdioma()">ES</bottom>
+      <h1>Green hydrogen plant</h1>
+
+      <p>
+        The green hydrogen generation process consists of three main phases:
+        production, storage and distribution.
+      </p>
+      <p>
+        Below, you can see a 3D schematic representation of a Hydrogen plant. It
+        shows the different areas in which each of the generation phases take
+        place, beginning with the production of hydrogen through the HEVO
+        panels, followed by the storage in pressure tanks and finishing in the
+        distribution through the supplier.
+      </p>
+
+      <div>
+        <h3>Minimum requirements:</h3>
+
+        <ul>
+          <li>Android or IOS updated.</li>
+          <li>Google Chrome browser updated.</li>
+        </ul>
+      </div>
+
+      <h3>Instructions for use:</h3>
+
+      <ul>
+        <li>
+          Clicking the "START" button at the bottom of this page you can see the
+          3d model of the Hydrogen plant, by which you can navigate, touching on
+          the model, rotating and zooming.
+        </li>
+
+        <li>
+          If your device supports augmented reality, it will display a button
+          where you can activate it.
+        </li>
+
+        <li>
+          Point the mobile at a lighted area on the ground, press the "Activate
+          AR" and move the mobile gently to make the 3D model appear in
+          augmented reality.
+        </li>
+      </ul>
+
+      <div class="boton-contendor">
+        <a class="boton" href="./ModelViewer">START</a>
+      </div>
+    </div>
+    <script>
+      const alternarIntroES = () =>
+        document.getElementById("introES").classList.toggle("oculto");
+
+      const alternarIntroEN = () =>
+        document.getElementById("introEN").classList.toggle("oculto");
+
+      const cambiarIdioma = () => {
+        alternarIntroEN();
+        alternarIntroES();
+      };
+    </script>
+  </body>
+</html>
